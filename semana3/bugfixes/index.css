@@ -58,7 +58,7 @@ div>p:first-child {
 
 .icone {
     height: 15px;
-    width: 15px;
+    width: 1px;
 }
 
 
@@ -123,12 +123,14 @@ td button {
     background-color: white;
     width: 100px;
     height: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     font-size: 10px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #47412b;
+    color: cornsilk;
+    
 }
