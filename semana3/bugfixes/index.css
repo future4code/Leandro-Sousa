@@ -58,7 +58,7 @@ div>p:first-child {
 .container {
     height: 500px;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .icone {
@@ -79,7 +79,7 @@ div>p:first-child {
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 #container-para-comprar {
@@ -108,6 +108,7 @@ div:last-child {
 table {
     width: 100%;
     text-align: center;
+    margin-left: 40px;
 }
 
 td button {
