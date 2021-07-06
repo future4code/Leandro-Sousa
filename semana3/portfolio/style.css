@@ -1,0 +1,90 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h1{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    text-align: center;
+    
+}
+
+ol{
+    display: inline-block;
+}
+
+img{
+    max-width:550px;
+    max-height:660px;
+    border-radius: 50px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+table{
+    border: salmon;
+    border-style: inset;
+    display: inline-block;
+}
+
+.sobre-mim{
+    display: block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.lista-ensino{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 400px;
+}
+
+.projeto-lista{
+    background-color: snow;
+    display: block;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 400px;
+    display: inline-flex;
+}
+
+.habil-projeto{
+    background-color: snow;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 400px;
+    display: inline-flex;
+
+}
+
+.fundo-redes{
+    background-color: snow;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+}
+
+#id-sobre{
+    font-size: 40px;
+    color: rgb(173, 179, 187);
+    display: inline-block;
+
+
+}
+
+
+#fundo{
+    background-color: rgb(107, 191, 219);
+}
