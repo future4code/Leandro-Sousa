@@ -1,0 +1,51 @@
+header {
+    background-color: mediumvioletred ;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}
+
+header button{
+ margin-left: auto;
+}
+
+.menu-imagens{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.coluna-main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.coluna-lateral {
+    background-color:#f2d0e0 ;
+    width: 300px;
+    height: 700px; 
+}
+.coluna-lateral img{
+    width: 20px;
+}
+
+.imagens-bolo {
+
+
+}
+
+th{
+    box-shadow: 4px 5px 25px 0px black ;
+    padding: 10px;
+}
+
+.imagens-bolo img{
+    width: 250x;
+    height: 250px;
+}
