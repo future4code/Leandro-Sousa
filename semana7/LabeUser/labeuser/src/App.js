@@ -7,14 +7,14 @@ import Tela1 from './components/Tela1';
 
 export default class App extends React.Component {
   state = {
-    estadoTelas: false
+    estadoTelas: true
   };
 
   renderizaTelas = () => {
     if(this.state.estadoTelas) {
-      return <Home voltarTela={this.passarDeTela} />
+      return <Home irParaLista={this.voltarTela} />
     }else {
-      return <Tela1 irParaLista={this.voltarTela} />
+      return <Tela1 voltarTela={this.passarDeTela} />
     }
   }
 
