@@ -11,16 +11,48 @@ import iconeComentario from '../../img/comment_icon.svg'
 
 
 const Post = (props) => {
+  const [like, setLike] = useState(false);
+  const [countLike,setCountLike] = useState(0)
+  const [comment, setComment] = useState(false)
+  const [countNumber, setCountNumber] = useState(0)
+  const [listComments, setListComments] = useState([""])
+
+
 
 
   const onClickCurtida = () => {
+    if (like === true)   {
+      setLike(false)
+      setCountLike(countLike - 1)
+      return 
+    } 
+    setLike(true)
+    setCountLike(countLike +1)
+    return 
   };
 
   const onClickComentario = () => {
+   if(comment === true){
+     setComment(false)
+     return
+   }
+   setComment(true)
+   return
   };
 
-  const enviarComentario = (comentario) => {
+  const enviarComentario = (comment) => {
+    setListComments([...listComments, comment])
+    setComment(false)
+    setCountNumber(countNumber + 1)
   }
+
+  const listRender = listComments.map(comentario => {
+    return(
+      <CommentContainer>
+        <p>{comentario}</p>
+      </CommentContainer>
+    )
+  })
 
   return (
     <PostContainer>
@@ -33,18 +65,20 @@ const Post = (props) => {
 
       <PostFooter>
         <IconeComContador
-          // icone={iconeCurtida}
+          icone={like?iconeCoracaoPreto:iconeCoracaoBranco}
           onClickIcone={onClickCurtida}
-          // valorContador={numeroCurtidas}
+          valorContador={countLike}
         />
 
         <IconeComContador
           icone={iconeComentario}
           onClickIcone={onClickComentario}
-          // valorContador={numeroComentarios}
+          valorContador={countNumber}
         />
       </PostFooter>
-      {/* {caixaDeComentario} */}
+     
+      {comment ? <SecaoComentario enviarComentario={enviarComentario}/>: null}  
+      {listRender}
     </PostContainer>
   )
 }
